@@ -54,6 +54,9 @@ body {
     text-align: center;
     letter-spacing: .3vw;
     line-height: 4vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    box-sizing: border-box;
 }
 
 
