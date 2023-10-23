@@ -56,7 +56,7 @@ function Introduction() {
 function Project() {
     return (
         <div id="project">
-            <Moon_project class_name = "hangul_memorizer" title = "Hangul Memorizer" text = "Hangul is the name of the korean alphabet! The purpose of the site is to help memorize it while playing a minigame, where it is displayed a korean letter and you need to select its romanized version."/>
+            <Moon_project class_name = "hangul_memorizer" title = "Hangul Memorizer" text = "Hangul is the name of the korean alphabet! The purpose of the site is to help memorize it while playing a minigame, where it is displayed a korean letter and you need to select its romanized version." link = "http://hangulmemorizer.vercel.app"/>
 
             <div id="project_block">
                 <div id="project_title">Project List</div>
@@ -99,10 +99,14 @@ function Moon_project(data) {
         project_list.style.display = "flex";
     }
 
+    function open_link() {
+        window.open(`${data["link"]}`);
+    }
+
     return (
         <div className={`${data["class_name"]} moon_project`}>
             <div className="moon_project_title">
-                {data["title"]}
+                <span className="project_link" onClick={open_link}>{data["title"]}</span>
                 <div className="close_moon_project" onClick={hide}>X</div>
             </div>                 
 
