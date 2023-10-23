@@ -74,46 +74,27 @@ body {
     background-image: url("../images/discord_logo.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    transition: .4s;
+    transition-property: transform;
 }
 
 
 #discord_img:hover{
-    animation-name: scale;
-    animation-duration: .4s;
-    animation-fill-mode: forwards;
     cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+#discord {
+    transition: .4s;
+    transition-property: transform;
 }
 
 
 #discord:hover {
-    animation-name: scale1;
-    animation-duration: .4s;
-    animation-fill-mode: forwards;
     cursor: pointer;
+    transform: scale(1.1);
 }
-
-
-@keyframes scale {
-    0% {
-        transform: scale(1);
-    }
-    
-    100% {
-        transform: scale(1.2);
-    }
-}
-
-
-@keyframes scale1 {
-    0% {
-        transform: scale(1);
-    }
-    
-    100% {
-        transform: scale(1.1);
-    }
-}
-
 
 .clipboard {
     position: absolute;
