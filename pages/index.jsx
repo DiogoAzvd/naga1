@@ -101,21 +101,17 @@ function Moon_project(data) {
 
     return (
         <div className={`${data["class_name"]} moon_project`}>
-            <div className="moon_block_l">
-                <div className="moon_project_title">
-                    {data["title"]}
-                    <div className="close_moon_project" onClick={hide}>X</div>
-                </div>
+            <div className="moon_project_title">
+                {data["title"]}
+                <div className="close_moon_project" onClick={hide}>X</div>
+            </div>                 
 
-                <div className="moon_project_img_block">
+            <div className="moon_project_img_block">
                     <div className="moon_project_img"></div>
-                </div>                 
             </div>
 
-            <div className="moon_block_r">
-                <div className="moon_project_text">
-                    {data["text"]}
-                </div>
+            <div className="moon_project_text">
+                {data["text"]}
             </div>
         </div>
     );

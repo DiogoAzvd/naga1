@@ -3,6 +3,8 @@ html, body {
     aspect-ratio: 2 / 1;
     margin: auto;
     font-family: "Patrick Hand";
+    min-height: 480px;
+    min-width: 320px;
 }
 
 
@@ -127,6 +129,7 @@ body {
     opacity: 1;
 }
 
+
 #project {
     width: 100%;
     aspect-ratio: 2 / 1;
@@ -217,35 +220,19 @@ body {
 
 .moon_project {
     width: 80%;
-    aspect-ratio: 2 / 1;
+    aspect-ratio: 2 / 1.2;
     background-color: rgba(5, 5, 10, .6);
     display: none;
     align-items: center;
     justify-content: center;
     color: #fff;
-    flex-direction: row;
-}
-
-
-.moon_block_l {
-    width: 60%;
-    height: 100%;
-    border-right: .2vw #fff solid;
-    box-sizing: border-box;
-    display: flex;
     flex-direction: column;
-}
-
-
-.moon_block_r {
-    width: 40%;
-    height: 100%;
 }
 
 
 .moon_project_title {
     width: 100%;
-    height: 15%;
+    height: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -256,7 +243,7 @@ body {
 
 .moon_project_img_block {
     width: 100%;
-    height: 85%;
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -283,8 +270,8 @@ body {
 
 
 .moon_project_img {
-    width: 80%;
-    height: 65%;
+    width: 60%;
+    height: 100%;
     background-image: url("../images/Hangul_Memorizer.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -292,7 +279,7 @@ body {
 
 
 .moon_project_text {
-    height: 100%;
+    height: 30%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -302,7 +289,148 @@ body {
     padding-left: 1.5vw;
     padding-right: 1.5vw;
     box-sizing: border-box;
-    letter-spacing: 0.3vw;
+    letter-spacing: 0.2vw;
     word-spacing: 0.3vw;
-    letter-spacing: 0.5vw;
+}
+
+
+@media (max-width: 900px) {
+    html, body {
+        aspect-ratio: 1 / 1;
+    }
+
+    #introduction {
+        aspect-ratio: 1 / 1;
+        background-image: url("../images/Moonlight1.png");        
+    }
+
+
+    #intro_block {
+        aspect-ratio: 1 / 1;
+    }
+
+
+    #title_block, #contact_block {
+        height: 15%;
+        font-size: calc(10px + 2vw);
+    }
+
+
+    #text_block {
+        font-size: calc(10px + 1.3vw);
+        line-height: 9vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+
+
+    #contact_block {
+        font-size: calc(10px + 1.3vw);
+        gap: 4vw;
+    }
+
+
+    #discord_img {
+        height: 4.3vw;
+        width: 5.5vw;
+    }
+
+
+    .clipboard {
+        margin-bottom: 23vw;
+        width: calc(28px + 24vw);
+        height: 8vw;
+        font-size: calc(7px + 1.3vw);
+    }   
+
+    
+    .clipboard::after {
+        height: 0;
+        width: 0;
+        border-left: 3vw solid transparent;
+        border-right: 3vw solid transparent;
+        border-top: 6vw solid rgba(0, 0, 0, 1);
+        margin-top: 12vw;
+    }
+
+
+    #project {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+    
+    
+    #project_block {
+        width: 80%;
+        aspect-ratio: 1 / 1;
+    }
+    
+    
+    #project_title {
+        font-size: calc(10px + 2vw);
+    }
+    
+    
+    #project_tip {
+        font-size: calc(6px + 1.6vw);
+        padding-right: 2vw;
+        padding-left: 2vw;
+        box-sizing: border-box;
+    }
+    
+    
+    #project_list {
+        font-size: calc(10px + 1.3vw);
+        gap: 8vw;
+    }
+    
+    
+    #moon_icon {
+        height: 5vw;
+        width: 5vw;   
+    }
+
+
+    .moon_project {
+        width: 80%;
+        aspect-ratio: 1 / 1.2;
+    }
+    
+    
+    .moon_project_title {
+        font-size: calc(10px + 2vw);
+    }
+    
+    
+    .moon_project_img_block {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .close_moon_project {
+        height: 8vw;
+        width: 8vw;
+        margin-left: 60vw;
+        font-size: 6vw;
+    }
+    
+    
+    .moon_project_img {
+        width: 80%;
+        height: 80%;
+    }
+    
+    
+    .moon_project_text {
+        height: 40%;
+        font-size: calc(8px + 1.1vw);
+        padding-left: 2vw;
+        padding-right: 2vw;
+        line-height: 6vw;
+    }
 }
